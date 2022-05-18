@@ -1,11 +1,17 @@
-import { StyleSheet, Text, SafeAreaView, View } from "react-native";
+import { StyleSheet, Text, SafeAreaView, View, FlatList } from "react-native";
 import React from "react";
 import HeaderTabs from "../components/HeaderTabs";
+import SearchBar from "../components/SearchBar";
+import Categories from "../components/Categories";
 
 const HomeScreen = () => {
   return (
-    <SafeAreaView>
-      <HeaderTabs />
+    <SafeAreaView style={{ backgroundColor: "#eee" }}>
+      <View style={{ backgroundColor: "white", padding: 15 }}>
+        <HeaderTabs />
+        <SearchBar />
+      </View>
+      <Categories />
     </SafeAreaView>
   );
 };
